@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="et">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bootstrapi juhend">
+  <meta name="author" content="">
+  <title>Bootstrap 5</title>
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--Bootstrap ikoonid-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!--minu CSS-->
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+<!-- Navigatsioon --->
+  <nav class="navbar navbar-expand-lg sticky-top bg-dark py-3" data-bs-theme="dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand me-5" href="#">Bootstrap 5</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="navbar-nav nav-link me-auto" href="meist.html">Meist</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Naised</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Saapad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Mehed</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Saapad</a></li>
+            </ul>
+          </li>
+        </ul>
+       
+        <!--Otsi vorm -->
+        <form class="d-flex me-1">
+          <div class="input-group">
+            <div class="input-group-text"><span class="bi bi-search mb-2"></span></div>
+            <input class="form-control" type="search" placeholder="Otsi" aria-label="Search">
+          </div>
+        </form>
+      </div>
+      <div class="float-end">
+       
+        <!--Login ikoon-->
+        <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
+        
+        <!--Ostukorvi ikoon-->
+        <a class="btn btn-primary" href="ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
+      
+      </div>
+    </div>
+  </nav>
+  
+  <section>
+    <div class="container">
+      <div class="hero bg-light p-4 mt-4">
+        <h1 class="display-4">Tere tulemast!</h1>
+      </div>
+      <div class="row p-2 mt-2">
+        <h2>Meist</h2>
+        <div class="col-md-4 p-2 mt-2">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a href="#meeskond" class="list-group-item list-group-item-action active" id="list-item1-list" data-bs-toggle="list" role="tab" aria-controls="meeskond">
+              Meeskond
+            </a>
+            <a href="#kontakt" class="list-group-item list-group-item-action" id="list-item2-list" data-bs-toggle="list" role="tab" aria-controls="kontakt">Kontakt</a>
+          </div>
+        </div>
+        <div class="col-md-8 ps-2 mt-2">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="meeskond" role="tabpanel" aria-labelledby="list-item1-list">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel malesuada elit. Etiam eget bibendum magna. Suspendisse potenti. Duis vestibulum lorem sit amet lectus mattis tempus. Quisque finibus orci at varius commodo. Pellentesque tempus leo dolor, in porta risus pellentesque a. Maecenas ultricies odio massa, in pharetra augue maximus sed. Donec ut quam vitae leo luctus imperdiet. Nunc tincidunt sed arcu ut vestibulum. Donec nulla ante, pellentesque nec pulvinar id, imperdiet id leo. Morbi in nunc eget neque mollis consectetur id quis odio. Suspendisse ullamcorper arcu sed nisl imperdiet bibendum.
+                Integer risus sapien, posuere non tellus sed, lacinia viverra nunc. Phasellus dictum, diam nec porttitor tempor, lacus libero efficitur libero, a mollis elit augue quis orci. Integer eleifend volutpat massa, a porttitor ligula consectetur eget. Suspendisse et malesuada ligula, non tincidunt nunc. Donec tempus arcu at nisl convallis efficitur. Pellentesque at porta enim. Praesent pharetra enim justo, nec fermentum odio hendrerit in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus vel pulvinar neque. Nam ultricies, elit non euismod ullamcorper, libero neque tempor tellus, eget vulputate mauris ex nec diam. Mauris ac dui nunc.</p>
+            </div>
+            <div class="tab-pane fade" id="kontakt" role="tabpanel" aria-labelledby="list-item2-list">
+              <ul class="list">
+                <li class="text-body mb-auto">© dd.mm.yyyy</li>
+                <li class="text-body mb-auto">tel: 55555555</li>
+                <li class="text-body mb-auto">@: email@email.com</li>
+              </ul>
+              <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.4744972779026!2d26.72218177590813!3d58.385398886218475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb37b2e8a6ef3d%3A0xb1c21ea409a3845f!2sDelta%20Centre%20-%20University%20of%20Tartu!5e0!3m2!1sen!2see!4v1727033863146!5m2!1sen!2see" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  
+  <!-- Footer -->
+  <footer class="footer bg-dark mt-5 py-3" data-bs-theme="dark">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <div class="col-md-11">
+          <ul class="list-unstyled mt-4">
+            <li class="text-body mb-auto">© dd.mm.yyyy</li>
+            <li class="text-body mb-auto">tel: 55555555</li>
+            <li class="text-body mb-auto">@: email@email.com</li>
+          </ul>
+        </div>
+        <div class="col-md-1">
+          <ul class="list mt-3 ml-auto ps-0">
+            <li><a class="btn btn-lg" href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a class="btn btn-lg" href="#"><i class="bi bi-youtube"></i></a></li>
+          </ul>  
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!--Popper.js-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  
+  <!--Bootstrap.js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
